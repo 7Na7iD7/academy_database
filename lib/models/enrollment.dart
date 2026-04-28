@@ -1,17 +1,17 @@
 class Enrollment {
   final int? enrollmentID;
-  final int? studentID;    // ✅ nullable شد
-  final int? courseID;     // ✅ nullable شد
-  final DateTime? enrollDate;  // ✅ nullable شد
+  final int? studentID; 
+  final int? courseID; 
+  final DateTime? enrollDate; 
   final bool isPaid;
   final String? studentName;
   final String? courseTitle;
 
   Enrollment({
     this.enrollmentID,
-    this.studentID,      // ✅ required برداشته شد
-    this.courseID,       // ✅ required برداشته شد
-    this.enrollDate,     // ✅ required برداشته شد
+    this.studentID,  
+    this.courseID,
+    this.enrollDate,
     required this.isPaid,
     this.studentName,
     this.courseTitle,

@@ -1,17 +1,17 @@
 class Course {
   final int? courseID;
   final String title;
-  final int? teacherID;  // ✅ nullable شد
+  final int? teacherID;
   final String? teacherName;
-  final int? capacity;    // ✅ nullable شد
+  final int? capacity;
   final double? price;
 
   Course({
     this.courseID,
     required this.title,
-    this.teacherID,      // ✅ required برداشته شد
+    this.teacherID,
     this.teacherName,
-    this.capacity,       // ✅ required برداشته شد
+    this.capacity,
     this.price,
   });
 

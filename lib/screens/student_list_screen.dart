@@ -20,14 +20,10 @@ class _StudentListScreenState extends State<StudentListScreen> {
     _fetch();
   }
 
-  // در API شما متدی به نام getStudents فرض شده است.
-  // اگر در DatabaseService هنوز آن را نساختیم، در اینجا از getAllEnrollments برای نمایش استفاده کنید یا متد را اضافه کنید.
+
   Future<void> _fetch() async {
-    // نکته: برای سادگی فرض میکنیم متد getStudents در DatabaseService اضافه شده است
-    // در غیر این صورت میتوانید از لیست کلی Enrollment دانشجوها را استخراج کنید.
     final data = await DatabaseService.getAllEnrollments();
     setState(() {
-      // استخراج نام‌های یکتا از ثبت‌نام‌ها برای نمایش موقت لیست دانشجویان
       final uniqueNames = <String>{};
       students = [];
       for (var e in data) {

@@ -9,9 +9,9 @@ import '../models/enrollment.dart';
 class DatabaseService {
   static String get _baseUrl {
     if (kIsWeb || !Platform.isAndroid) {
-      return "http://localhost:5271";
+      return "localhost";
     } else {
-      return "http://10.0.2.2:5271";
+      return "------";
     }
   }
 
